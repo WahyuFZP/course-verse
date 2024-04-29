@@ -1,0 +1,72 @@
+/* General sidebar styles */
+.classroom-dashboard__aside {
+  width: 250px; /* Adjust width as needed for content */
+  background-color: #494848; /* Adjust background color */
+  /* Add box-shadow, border, etc. for desired effects */
+  padding: 10px; /* Adjust padding as needed */
+  
+  position: fixed; /* Make background fill viewport */
+  top: 55px; /* Position at top */
+  left: 0; /* Position at left */
+  height: 100%; /* Stretch to full height */
+  
+  z-index: 1; /* Optional: Adjust z-index for layering (if needed) */
+  
+  /* Hide on large screens initially */
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .classroom-dashboard__aside {
+    display: block; /* Change to display: block to show on desktops */
+  }
+}
+
+
+/* Header styles (adjust positioning as needed) */
+.classroom-dashboard__aside-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.classroom-dashboard__aside-header h2 {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  font-weight: bold; /* Adjust font weight as needed */
+}
+
+/* Navigation styles (adjust positioning as needed) */
+.classroom-dashboard__aside-nav {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.classroom-dashboard__aside-nav-item {
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.classroom-dashboard__aside-nav-item a {
+  text-decoration: none; /* Remove underline from links */
+  color: #eeeeee; /* Adjust link color as needed */
+  display: block; /* Make links fill the width of the list item */
+  padding: 5px 10px; /* Adjust padding as needed */
+}
+
+.classroom-dashboard__aside-nav-item.active a {
+  color: #fff; /* Adjust active link color as needed */
+  background-color: #007bff; /* Adjust active link background color as needed */
+}
+
+/* Quote section styles (adjust positioning as needed) */
+.classroom-dashboard__aside-quote {
+  font-style: italic; /* Italicize the quote text */
+  text-align: center; /* Center the quote text */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.classroom-dashboard__aside-quote p:first-child {
+  font-size: 1.1rem; /* Adjust font size as needed */
+}
